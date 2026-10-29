@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+ body{
+    background-color: #151a1f;
+    color: white;
+    height: 1800px;
+ }
+ /* .menuContainer .submenubar li{
+display: flex;
+ } */
+ .tooglebutton{
+    /* background-color: aquamarine; */
+    display: none;
+ }
+ .tooglebutton span{
+    width: 2rem;
+    border: 1px solid ;
+    margin: 0.25rem;
+    display: block;
+ }
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    position: fixed;
+   background-color: black;
+   top: 0;
+   left: 0;
+   margin-bottom: 20px;
+   width: 100%;
+   padding: 20px;
+}
+.logoContainer{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.textLogoContainer h4{
+    font-size: 30px;
+}
+.menuContainer{
+    margin-right: 35px;
+}
+.menuContainer ul li a{
+    text-decoration: none;
+    padding: 0.5rem;
+     &:hover{
+        color: rgb(199, 152, 22);
+        background-color: rgb(91, 103, 104);
+    }
+font-size: 20px;
+color: white;
+}
+.menuContainer ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2rem;
+    align-items: center;
+}
+.menuContainer ul li{
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+.imageLogoContainer img {
+    width: 3rem;
+    height: 1.5rem;
+}
+
+.landingSection {
+    position: relative;
+    z-index: 99;
+    margin: 0;
+    margin-top: 80px;
+}
+.landingSection img {
+    width: 100%;
+    height: 37rem;
+}
+.landingSection h1{
+    font-size: 120px;
+    font-weight: bold;
+}
+.landingContent{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    margin: 3rem 1rem;
+}
+.landingSection .para1{
+    color: rgb(199, 152, 22);
+font-size: 120px;
+font-weight: bold;
+}
+.landingSection .para2{
+    margin-top: 30px;
+     font-size: 23px;
+    font-weight: 700;
+    color: white;
+}
+.landingSection button{
+     background-color: rgb(199, 152, 22);
+    border-radius: 50px;
+    padding: 20px 50px;
+    color: black;
+    border-style: none;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+   margin-top: 40px;
+   margin-left: 500px;
+}
+
+/* today thursday */
+
+.adventureContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    padding: 3rem;
+}
+.adventureTourContainer{
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+}
+.adventureContainer .adventureTourContainer a{
+font-size: 2.5rem;
+text-decoration: none;
+font-variant: small-caps;
+font-weight: 700;
+color: white;
+margin-bottom: 30px;
+}
+.adventureContainer .adventureBoxContainer{
+    background-color: #222a32;
+    border-radius: 1rem;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: space-between; */
+    padding: 1rem;
+    &:hover{
+        border: 1px solid rgb(199, 152, 22);
+    }
+}
+.adventureContainer .adventureBoxContainer .adventureImageContainer {
+    display: flex;
+    justify-content: center;
+    padding: 23px;
+}
+.adventureContainer .adventureBoxContainer .adventureImageContainer img{
+    width: 20rem;
+    height: 19rem;
+    border-radius: 50%;
+} 
+.adventureContainer .adventureBoxContainer .adventureTitleContainer h1 {
+color: #e2a84b ;
+
+}
+.adventureContainer .adventureBoxContainer .advantureParagraghContainer p{
+    line-height: 1.7rem;  
+}
+.adventureContainer .adventureBoxContainer .adventureReadMoreContainer a{
+font-size: 1rem;
+border: 2px solid #1b1f24;
+display: block;
+text-decoration: none;
+text-transform: capitalize;
+padding: 0.65rem 1rem;
+width: fit-content;
+justify-self: center;
+border-radius: 2rem;
+color: #e2a84b;
+font-style: normal;
+font-weight: 600;
+background-color: #4a432ec4;
+ &:hover{
+    color: black;
+       background-color: rgb(199, 152, 22);
+    }
+}
+.box-image2 img{
+    display: block;
+    border-radius: 0.65rem;
+    width: 100%;
+    object-fit: cover;
+}
+.contact-title {
+text-align: center;
+font-size: 29px;
+padding: 2rem 0;
+}
+.contact-title a{
+    font-variant: small-caps;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+.send{
+margin-top: 1.8rem;
+}
+.send a{
+   background-color: #e2a84b;
+   color: black;
+   padding: 0.8rem 1.7rem;
+   border-radius: 1.7rem;
+}
+.input {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    &:focus{
+         border-style: none;
+        border: 0.4rem solid #c58113;
+    } 
+}
+.input input, textarea {
+    background-color: #222a32;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 1.5rem;
+    border-style: none;
+    &:focus{
+         border-style: none;
+        border: 0.3rem solid #c58113;  
+    }
+}
+.formContainer{
+    width: 550px;
+    margin-left: 15rem;
+    margin-bottom: 3rem;
+}
+textarea{
+    grid-column: 1/3;
+}
+footer{
+    background-color: #101418;
+    padding: 6rem;
+}
+.footer{
+display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 3.5rem;
+    margin-bottom: 3rem;
+}
+.info p, a{
+    line-height: 2.5rem;
+    color: #c3cad5;
+}
+.info p{
+    color: #e2a84b ;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+ .paraf1, .paraf2{
+    text-align: center;
+    color: #c3cad5;
+    font-size: 18px;
+    font-weight: 600;
+}
+.paraf1{
+    margin-bottom: 2rem;
+}
+
+/* Media Query*/
+
+ @media (max-width: 730px) {
+    .tooglebutton{
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 4rem;
+        /* background-color: #151a1f; */
+    }
+    .submenubar {
+display: none;
+    }
+    .menuContainer:hover .submenubar{
+display: block;
+position: absolute;
+right: 1rem;
+top: 3rem;
+    }
+    .menuContainer:hover ul{
+        display: flex;
+        flex-direction: column;
+    }
+ }
+ @media (max-width: 630px) {
+    .adventureContainer  {
+    display: flex;
+    flex-direction: column;
+    }
+    .formContainer{
+        width: 300px;
+        margin: 0 10px;
+    }
+    .input {
+        display: flex;
+        flex-direction: column;
+        align-content: start;
+    }
+ }
